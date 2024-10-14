@@ -1,0 +1,140 @@
+.website-aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+    -webkit-transform 0.25s ease-in-out;
+  overflow: hidden;
+  z-index: 150;
+}
+
+.website-aside__inside {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  padding: 80px;
+  overflow: auto;
+}
+
+.website-aside__close {
+  position: absolute;
+  top: 72px;
+  right: 80px;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  text-align: center;
+  background: #f8f8fa;
+  border: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.website-aside__close .i {
+  position: static;
+  width: 24px;
+  height: 100%;
+  fill: #000;
+  vertical-align: top;
+  pointer-events: none;
+}
+
+.website-aside__header {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.website-aside__header-text {
+  max-width: 50rem;
+  margin-top: 1.4rem;
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+}
+
+.website-aside__heading {
+  margin: 0;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 800;
+}
+
+.website-aside__body {
+  width: 100%;
+}
+
+.website-aside .default-form {
+  max-width: 100%;
+}
+
+.default-form {
+  width: 100%;
+  max-width: 39.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.default-form__section {
+  width: 100%;
+}
+
+.default-form__row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.input textarea {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: 0 0;
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  outline: 0;
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.2s ease;
+  min-height: 160px;
+  resize: vertical;
+}
+
+.input input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  outline: 0;
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+.file-uploader__control .button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+}
+
+.input input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+.input textarea {
+  color: #282630;
+  background-color: #fff;
+  border-color: #e0e5eb;
+}
